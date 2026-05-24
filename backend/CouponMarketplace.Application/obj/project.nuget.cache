@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "PxnqRA7x9SU=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\97250\\OneDrive\\coupon-marketplace\\backend\\CouponMarketplace.Application\\CouponMarketplace.Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\97250\\.nuget\\packages\\fluentvalidation\\12.1.1\\fluentvalidation.12.1.1.nupkg.sha512"
+  ],
+  "logs": []
+}
