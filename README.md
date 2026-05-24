@@ -1,32 +1,57 @@
 # Coupon Marketplace API
 
-Backend project built with:
+Backend API for managing coupons and users.
 
-- ASP.NET Core Web API
-- PostgreSQL
+## Technologies
+
+- ASP.NET Core 9
 - Entity Framework Core
+- PostgreSQL
 - JWT Authentication
-- FluentValidation
 - Swagger
+- Docker
 
-## Run Project
+---
 
-1. Start PostgreSQL with Docker
+## Run With Docker
 
-docker run --name coupons-db ^
--e POSTGRES_USER=postgres ^
--e POSTGRES_PASSWORD=postgres ^
--e POSTGRES_DB=coupons ^
--p 5432:5432 ^
--d postgres
+```bash
+docker compose up -d
+```
 
-2. Run migrations
+---
 
+## Run Database Migrations
+
+```bash
 dotnet ef database update --project ../CouponMarketplace.Infrastructure --startup-project .
+```
 
-3. Run API
+---
 
+## Run The Project
+
+```bash
 dotnet run
+```
 
-Swagger:
+---
+
+## Swagger
+
+After running the project:
+
+```text
 http://localhost:5293/swagger
+```
+
+---
+
+## Features
+
+- User Registration
+- User Login with JWT
+- Coupons CRUD
+- Validation
+- PostgreSQL database
+- Swagger API documentation
